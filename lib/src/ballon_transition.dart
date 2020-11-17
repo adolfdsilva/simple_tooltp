@@ -33,7 +33,7 @@ class _BalloonTransitionState extends State<_BalloonTransition>
       duration: widget.duration,
     );
     final CurvedAnimation curvedAnimation = CurvedAnimation(
-      curve: Curves.bounceOut,
+      curve: Curves.easeIn,
       parent: _animationController,
     );
     _rotationAnimation = Tween<double>(begin: pi * .5, end: 0).animate(
